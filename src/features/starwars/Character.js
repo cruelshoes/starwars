@@ -40,6 +40,7 @@ export function Character() {
     }}>
     <Box sx={{ 
       minWidth: 240,
+      maxWidth: 360
     }}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">Character</InputLabel>
@@ -55,6 +56,7 @@ export function Character() {
       </FormControl>
     </Box>
     <Box sx={{
+      maxWidth: 360,
       minWidth: 240,
     }}>
       <List
@@ -75,7 +77,12 @@ export function Character() {
         <Divider /></>)}
       </List>
     </Box>
-    <Box>
+    <Box
+      sx={{
+        maxWidth: 360,
+        minWidth: 240,
+      }}
+    >
       <Typography id="last-movie" variant="subtitle1" component="div" gutterBottom>
         Name/Year (Last Movie): 
       </Typography>
